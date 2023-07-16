@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  &__wrapper {
+    &__screen {
+      &__calc-button-row {
+        &__calc-button {
+        }
+      }
+    }
+  }
+}
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(320deg, black, rgb(130, 9, 200));
+  font-family: "Dosis", sans-serif;
+}
+.wrapper {
+  padding: 25px;
+  backdrop-filter: blur(50%);
+  -webkit-backdrop-filter: blur(5.5px);
+  background-color: rgba(0, 0, 0, 0.717);
+  border: 1px solid rgb(138, 80, 240);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgb(138, 80, 240);
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+  color: black;
+  flex-basis: 400px;
+  margin: 10px;
+}
+.screen {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.854);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px (35, 35, 35, 0.1);
+  color: black;
+  font-size: 30px;
+  overflow: auto;
+  padding: 20px;
+  text-align: right;
+  max-width: 350px;
+  white-space: nowrap;
+  &__calc-buttons {
+  }
+
+  &__calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+    &__calc-button {
+      backdrop-filter: blur(5.5px);
+      -webkit-backdrop-filter: blur(5.5px);
+      background: rgba(255, 255, 255, 0.854);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+      flex-basis: 20%;
+      font-family: inherit;
+      font-size: 30px;
+      height: 65px;
+      color: black;
+      &:last-child {
+        background: rgb(78, 36, 155);
+        color: white;
+        backdrop-filter: none;
+        &:hover {
+          background: rgb(78, 36, 155);
+          background-color: inherit;
+          box-shadow: 0 0px 30px rgba(186, 101, 255, 1);
+        }
+      }
+      &:hover {
+        background-color: rgb(252, 0, 0);
+      }
+    }
+  }
+}
+
+.double {
+  flex-basis: 47%;
+}
+.null {
+  flex-basis: 47%;
+}
