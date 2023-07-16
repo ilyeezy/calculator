@@ -21,17 +21,17 @@
   justify-content: center;
   align-items: center;
 
-  background: linear-gradient(320deg, black, rgb(130, 9, 200));
+  background: linear-gradient(320deg, black, rgb(54, 18, 75), rgb(130, 9, 200));
   font-family: "Dosis", sans-serif;
 }
 .wrapper {
   padding: 25px;
-  backdrop-filter: blur(50%);
+  backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   background-color: rgba(0, 0, 0, 0.717);
   border: 1px solid rgb(138, 80, 240);
   border-radius: 20px;
-  box-shadow: 0 4px 30px rgb(138, 80, 240);
+  box-shadow: 0 4px 40px rgb(138, 80, 240);
   background-color: #000;
   position: relative;
   overflow: hidden;
@@ -45,7 +45,7 @@
   background: rgba(255, 255, 255, 0.854);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  box-shadow: 0 4px 30px (35, 35, 35, 0.1);
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 1);
   color: black;
   font-size: 30px;
   overflow: auto;
@@ -60,6 +60,7 @@
     display: flex;
     justify-content: space-between;
     margin: 5% 0;
+
     &__calc-button {
       backdrop-filter: blur(5.5px);
       -webkit-backdrop-filter: blur(5.5px);
@@ -72,6 +73,7 @@
       font-size: 30px;
       height: 65px;
       color: black;
+
       &:last-child {
         background: rgb(78, 36, 155);
         color: white;
@@ -88,10 +90,7 @@
     }
   }
 }
-
-.double {
-  flex-basis: 47%;
-}
-.null {
-  flex-basis: 47%;
+.first {
+  background: rgb(94, 94, 94);
+  color: white;
 }

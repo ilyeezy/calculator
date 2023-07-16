@@ -4,9 +4,16 @@
       <section class="wrapper__screen screen">0</section>
       <section class="screen__calc-buttons">
         <div class="screen__calc-button-row">
-          <button class="screen__calc-button-row__calc-button double">C</button>
-          <button class="screen__calc-button-row__calc-button">&larr;</button>
-          <button class="screen__calc-button-row__calc-button">&divide;</button>
+          <button class="screen__calc-button-row__calc-button first">C</button>
+          <button class="screen__calc-button-row__calc-button first">
+            &percnt;
+          </button>
+          <button class="screen__calc-button-row__calc-button first">
+            &larr;
+          </button>
+          <button class="screen__calc-button-row__calc-button first">
+            &divide;
+          </button>
         </div>
         <div class="screen__calc-button-row">
           <button class="screen__calc-button-row__calc-button">7</button>
@@ -27,7 +34,8 @@
           <button class="screen__calc-button-row__calc-button">&plus;</button>
         </div>
         <div class="screen__calc-button-row">
-          <button class="screen__calc-button-row__calc-button null">0</button>
+          <button class="screen__calc-button-row__calc-button">±</button>
+          <button class="screen__calc-button-row__calc-button">0</button>
           <button class="screen__calc-button-row__calc-button">,</button>
           <button class="screen__calc-button-row__calc-button">&equals;</button>
         </div>

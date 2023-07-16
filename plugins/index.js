@@ -12,11 +12,11 @@ if (typeof document !== "undefined" && document) {
     }
     screen.innerText = addThousandSeparators(buffer);
   }
+
   function addThousandSeparators(numberString) {
     numberString = numberString.replace(/\s/g, "");
     const parts = numberString.split(".");
     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-
     return parts.join(".");
   }
 
@@ -47,6 +47,12 @@ if (typeof document !== "undefined" && document) {
           buffer += ".";
         }
         break;
+      case "±":
+        toggleSign();
+        break;
+      case "%":
+        precent();
+        break;
       case "+":
       case "−":
       case "×":
@@ -56,13 +62,19 @@ if (typeof document !== "undefined" && document) {
     }
   }
 
+  function toggleSign() {
+    buffer = String(parseFloat(buffer) * -1);
+  }
+
+  function precent() {
+    buffer = String(parseFloat(buffer / 100));
+  }
+
   function handleMath(symbol) {
     if (buffer === "0") {
       return;
     }
-
     const intBuffer = parseFloat(buffer);
-
     if (runningTotal === 0) {
       runningTotal = intBuffer;
     } else {
